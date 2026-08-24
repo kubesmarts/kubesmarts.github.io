@@ -1,0 +1,13 @@
+{
+  "name": "kubesmarts-site",
+  "version": "1.0.0",
+  "description": "KubeSmarts documentation hub",
+  "private": true,
+  "scripts": {
+    "build": "antora antora-playbook.yaml"
+  },
+  "dependencies": {
+    "@antora/cli": "^3.1.9",
+    "@antora/site-generator": "^3.1.9"
+  }
+}
