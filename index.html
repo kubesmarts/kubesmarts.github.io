@@ -1,22 +1,121 @@
 <!doctype html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>KubeSmarts</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>KubeSmarts — Open Workflow on Kubernetes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KubeSmarts — Kubernetes-native tools for the Open Workflow Specification.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>body { font-family: 'Inter', system-ui, sans-serif; }</style>
 </head>
+<body class="bg-gray-50 min-h-screen">
 
-<body>
-    <div class="bg-white h-screen">
-        <div class="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">KubeSmarts</p>
-            </div>
-        </div>
+  <!-- Header -->
+  <header class="bg-white border-b border-gray-100">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex items-center gap-3">
+      <span class="text-xl font-bold text-gray-900 tracking-tight">KubeSmarts</span>
+      <span class="text-gray-300">|</span>
+      <span class="text-sm text-gray-500 font-medium">Open Workflow on Kubernetes</span>
     </div>
-</body>
+  </header>
 
+  <!-- Hero -->
+  <main class="max-w-6xl mx-auto px-6 py-20">
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-extrabold text-gray-900 tracking-tight mb-5">
+        Open Workflow, Kubernetes-native
+      </h1>
+      <p class="text-xl text-gray-500 max-w-2xl mx-auto">
+        A set of open-source components for running
+        <a href="https://open-workflow-specification.org/" class="text-indigo-600 hover:underline font-medium">
+          Open Workflow Specification
+        </a>
+        workloads on Kubernetes.
+      </p>
+    </div>
+
+    <!-- Component cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+      <!-- Logic Operator -->
+      <a href="/logic-operator/logic-operator/2.0.0/index.html"
+         class="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-indigo-300 hover:shadow-lg transition-all duration-200">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center flex-shrink-0
+                      group-hover:bg-indigo-100 transition-colors">
+            <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="text-lg font-bold text-gray-900">Logic Operator</h2>
+              <span class="text-xs font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full">v2.0</span>
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Kubernetes operator for Quarkus Flow. Manage workflow runtimes, definitions, and
+              traffic routing as native Kubernetes resources.
+            </p>
+            <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-indigo-600
+                         group-hover:gap-2 transition-all">
+              Read the docs
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Data Index -->
+      <a href="/logic-apps/data-index/1.0.0/index.html"
+         class="group bg-white rounded-2xl border border-gray-200 p-8 hover:border-teal-300 hover:shadow-lg transition-all duration-200">
+        <div class="flex items-start gap-4">
+          <div class="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center flex-shrink-0
+                      group-hover:bg-teal-100 transition-colors">
+            <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7C5 4 4 5 4 7z
+                       M9 12h6M9 16h4"/>
+            </svg>
+          </div>
+          <div class="flex-1 min-w-0">
+            <div class="flex items-center gap-2 mb-1">
+              <h2 class="text-lg font-bold text-gray-900">Data Index</h2>
+              <span class="text-xs font-semibold text-teal-600 bg-teal-50 px-2 py-0.5 rounded-full">v1.0</span>
+            </div>
+            <p class="text-sm text-gray-500 leading-relaxed">
+              Workflow instance tracking and observability service. Ingests workflow events and
+              exposes a GraphQL API for querying instance state.
+            </p>
+            <span class="inline-flex items-center gap-1 mt-4 text-sm font-semibold text-teal-600
+                         group-hover:gap-2 transition-all">
+              Read the docs
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-100 mt-24">
+    <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="text-sm text-gray-400">© 2026 KubeSmarts. Apache License 2.0.</span>
+      <div class="flex items-center gap-6 text-sm text-gray-400">
+        <a href="https://github.com/kubesmarts" class="hover:text-gray-700 transition-colors">GitHub</a>
+        <a href="https://open-workflow-specification.org/" class="hover:text-gray-700 transition-colors">OWS Spec</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

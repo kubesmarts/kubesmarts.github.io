@@ -1,0 +1,36 @@
+= KubeSmarts
+:description: Kubernetes-native tools for the Open Workflow Specification.
+
+KubeSmarts provides open-source components for running
+https://open-workflow-specification.org/[Open Workflow Specification (OWS)]
+workloads on Kubernetes.
+
+== Components
+
+[cols="1,3,1", options="header"]
+|===
+| Component | Description | Docs
+
+| *Logic Operator*
+| Kubernetes operator for https://github.com/quarkiverse/quarkus-flow[Quarkus Flow].
+  Manages workflow runtimes, definitions, and traffic routing as native Kubernetes resources
+  using the OWS 1.0.0 DSL.
+| link:/logic-operator/logic-operator/2.0.0/index.html[v2.0 →]
+
+| *Data Index*
+| Workflow instance tracking and observability service. Ingests workflow lifecycle events and
+  exposes a GraphQL API for querying instance history and status.
+| link:/logic-apps/data-index/1.0.0/index.html[v1.0 →]
+
+|===
+
+== Getting started
+
+The fastest path to a running workflow is the Logic Operator
+link:/logic-operator/logic-operator/2.0.0/getting-started.html[Getting Started] guide —
+it walks you through deploying on a local KIND cluster and invoking your first workflow
+in under 10 minutes.
+
+== License
+
+All KubeSmarts components are released under the https://www.apache.org/licenses/LICENSE-2.0[Apache License 2.0].
