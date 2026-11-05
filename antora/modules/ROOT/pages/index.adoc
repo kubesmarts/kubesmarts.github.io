@@ -15,19 +15,19 @@ workloads on Kubernetes.
 | Kubernetes operator for https://github.com/quarkiverse/quarkus-flow[Quarkus Flow].
   Manages workflow runtimes, definitions, and traffic routing as native Kubernetes resources
   using the OWS 1.0.0 DSL.
-| link:/logic-operator/logic-operator/2.0.0/index.html[v2.0 →]
+| link:/logic-operator/[v2.0 →]
 
 | *Data Index*
 | Workflow instance tracking and observability service. Ingests workflow lifecycle events and
   exposes a GraphQL API for querying instance history and status.
-| link:/logic-apps/data-index/1.0.0/index.html[v1.0 →]
+| link:/logic-apps/[v1.0 →]
 
 |===
 
 == Getting started
 
 The fastest path to a running workflow is the Logic Operator
-link:/logic-operator/logic-operator/2.0.0/getting-started.html[Getting Started] guide —
+link:/logic-operator/[Getting Started] guide —
 it walks you through deploying on a local KIND cluster and invoking your first workflow
 in under 10 minutes.
 
